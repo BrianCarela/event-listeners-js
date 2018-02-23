@@ -16,7 +16,14 @@
   background-color: green;
 }
 
-#definition{
+.red {
+  background-color: red;
+}
+
+#definitionOne,
+#definitionTwo,
+#definitionThree,
+#definitionFour{
   display: none;
 }
 
