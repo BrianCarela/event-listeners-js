@@ -20,20 +20,4 @@
   background-color: red;
 }
 
-#definition{
-  display: none;
-}
 
-#defcontainer{
-  margin: 0 auto;
-  text-align: center;
-  width: 50%;
-}
-
-#button{
-  margin: 0 auto;
-  width: 40%;
-  border: 1px solid black;
-  background-color: black;
-  color: white;
-}

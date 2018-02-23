@@ -1,10 +1,5 @@
-// 3 types of event listeners: click, hover, keyboard button. Don't let this get too complicated
-
-document.getElementById("title").addEventListener("click", function(){
-  console.log("hi");
-  document.getElementById("definition").style.display = "inline";
-});
-
-document.getElementById("zone-1").addEventListener("click", function(){
-  console.log("first test");
-});
+// Starter Variables
+var zone1 = document.getElementById("zone-1");
+var zone2 = document.getElementById("zone-2");
+var zone3 = document.getElementById("zone-3");
+var zone4 = document.getElementById("zone-4");
