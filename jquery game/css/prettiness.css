@@ -1,0 +1,40 @@
+body, html {
+  width: 100%; height: 100%;
+  margin: 0;
+  background-image: url("../images/stealth.png");
+  /*background-size: cover;*/
+  overflow: hidden;
+}
+.div1, .div2, .badguy{
+  position: absolute;
+}
+.div1{
+  top: 10%;
+  width: 110px;
+  height: 130px;
+  background-image: url("../images/sonic.gif");
+  background-size: cover;
+}
+.div2{
+  top: 70%;
+  width: 130px;
+  height: 130px;
+  background-image: url("../images/knuckles.gif-c200");
+  background-size: cover;
+}
+.badguy{
+  top: 40%;
+  width: 130px;
+  height: 130px;
+  background-image: url("../images/eggman.gif");
+  background-size: cover;
+}
+.pressStart{
+  position: absolute;
+  background-image: url("../images/title.png");
+  background-size: cover;
+  width: 400px;
+  height: 250px;
+  top: 30%;
+  left: 35%;
+}
