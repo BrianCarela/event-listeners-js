@@ -1,15 +1,15 @@
 jQuery(function() {
-  //just a basic
+  //Just a basic selector, so we can append our characters to the page
   var body = $('body');
 
-  //the Press Start
+  //The Press Start, this begins the game and hides the logo
   var begin = $('.pressStart');
   begin.click(function(){
     start();
     begin.hide();
   });
 
-  //the racers
+  //This is how the racers are added to the page, but then hidden
   var $div1 = $('<div>');
   $div1.addClass('div1');
   $div1.appendTo(body);
@@ -22,22 +22,27 @@ jQuery(function() {
   var div2pos = 0;
   $div2.hide();
 
-  //the enemy
+  //This is how the bad guy is added to the page, but then hidden
   var $badguy = $('<div>');
   $badguy.addClass('badguy');
   $badguy.appendTo(body);
   var badpos = 0;
   $badguy.hide();
 
-  //button presses.
-  function pressZ(){
+  //These are our event listeners
+  function pressS(){
+    // Upon keydown...
     $(document).keydown(function(z){
-      if (z.keyCode === 90){
+      // If the correct key is pressed...
+      if (z.keyCode === 83){
+        // Move our character over 35 pixels
         div1pos += 35;
         $div1.css({'left': '+=35px'});
         if(div1pos >= 1365){
+          // If our character reaches the finish line, they get a winning alert!
           var p1Wins = confirm("Sonic wins! Play again?");
           if(p1Wins === true){
+            // Reload the page once the notification gets a response
             location.reload();
           } else{
             location.reload();
@@ -47,14 +52,19 @@ jQuery(function() {
     });
   }
 
-  function pressRight(){
+  function pressK(){
+    // Upon keydown...
     $(document).keydown(function(r){
-      if (r.keyCode === 39){
+      // If the correct key is pressed...
+      if (r.keyCode === 75){
+        // Move our character over 35 pixels
         div2pos += 35;
         $div2.css({'left': '+=35px'});
         if(div2pos >= 1365){
+          // If our character reaches the finish line, they get a winning alert!
           var p2Wins = confirm("Knuckles wins! Play again?");
           if(p2Wins === true){
+            // Reload the page once the notification gets a response
             location.reload();
           } else{
             location.reload();
@@ -64,6 +74,7 @@ jQuery(function() {
     });
   }
 
+  // The bad guy functions the same as the characters, except he moves on his own, over time
   function badGuyRuns(){
     setInterval(function(){
       badpos += 80;
@@ -79,13 +90,16 @@ jQuery(function() {
     }, 500);
   }
 
-  //the entire game starts
+  //This function is activated when you click on the logo.
   function start(){
-    badGuyRuns();
+    // These 3 lines make our characters appear
     $div1.show();
     $div2.show();
     $badguy.show();
-    pressRight();
-    pressZ();
+    // This line gets the bad guy moving
+    badGuyRuns();
+    // These lines add event listeners to the DOM, which listen for the S and K key being pressed
+    pressK();
+    pressS();
   }
 });
