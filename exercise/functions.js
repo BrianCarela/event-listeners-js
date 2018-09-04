@@ -12,13 +12,13 @@ console.log('number of zones available: ', all.length);
 // Write the Event Listeners!
 function bindRed(element){
   // This Event Listener should give a class 'red' to the zone when moused over.
-
-    // element.classList.add("red");
-
+element.addEventListener("mouseover", function(){
+    element.classList.add("red");
+});
   // ... But if your mouse leaves this zone, it removes the class.
-
-    // element.classList.remove("red");
-
+element.addEventListener("mouseout", function(){
+    element.classList.remove("red");
+});
 }
 
 // Write the Event Listeners!
