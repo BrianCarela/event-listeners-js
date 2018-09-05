@@ -27,6 +27,8 @@ button.addEventListener("click", function(){
   def1.style.display = "inline";
 });
 
+
+
 // This Event Listener targets the first zone, and when it gets clicked...
 zone1.addEventListener("click", function(){
   // It adds a class 'green'! In the css, anything with the class 'green' has a background color of green
