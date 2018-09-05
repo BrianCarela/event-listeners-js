@@ -5,10 +5,19 @@ var zone1 = document.getElementById("zone-1");
 var zone2 = document.getElementById("zone-2");
 var zone3 = document.getElementById("zone-3");
 
+var $zone1 = $("#zone-1");
+var $zone2 = $("#zone-2");
+var $zone3 = $("#zone-3");
+
 var def1 = document.getElementById("definitionOne");
 var def2 = document.getElementById("definitionTwo");
 var def3 = document.getElementById("definitionThree");
 var def4 = document.getElementById("definitionFour");
+
+var $def1 = $("#definitionOne");
+var $def1 = $("#definitionTwo");
+var $def1 = $("#definitionThree");
+var $def1 = $("#definitionFour");
 
 // This built in method gives the title of the page an event listener.
 // The first argument decides what event to listen out for, and the second argument is a callback function.
