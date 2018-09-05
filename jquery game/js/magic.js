@@ -1,5 +1,5 @@
-jQuery(function() {
-  //Just a basic selector, so we can append our characters to the page
+
+  // Declare a variable called body, and assign it the value of the html tag 'body'
   var body = $('body');
 
   //The Press Start, this begins the game and hides the logo
@@ -102,6 +102,6 @@ jQuery(function() {
     pressK();
     pressS();
   }
-});
+
 
 // PHEW
