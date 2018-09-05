@@ -1,12 +1,15 @@
 
   // Declare a variable called body, and assign it the value of the html tag 'body'
-  var body = $('body');
+
 
   //The Press Start, this begins the game and hides the logo
   var begin = $('.pressStart');
+
+  // Select the Press Start element, and give it a click event listener.
   begin.click(function(){
-    start();
-    begin.hide();
+    // uncomment these functions once the click event listener is ready
+    // start();
+    // begin.hide();
   });
 
   //This is how the racers are added to the page, but then hidden
