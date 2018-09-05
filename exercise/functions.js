@@ -28,19 +28,21 @@ console.log('starter2.js linked');
   //binds the signal for the incorrect box
   function redBound(element){
     // Select the element, and give it a hover event listener
-
+    element.hover(function(){
       // Select the element, and toggle the class 'red'
-
-
+      element.toggleClass('red');
+    });
   }
+
+
 
   //binds the signal for the correct box
   function greenBound(element){
      // Select the element, and give it a hover event listener
-
+     element.hover(function(){
+      element.toggleClass('green');
+     });
       // Select the element, and toggle the class 'green'
-
-
   }
 
   //goes about binding things across the array

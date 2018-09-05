@@ -1,15 +1,14 @@
-
-  // Declare a variable called body, and assign it the value of the html tag 'body'
-
+// VERY IMPORTANT
+jQuery(function() {
+  //Create a variable called body, and assign it the value of the HTML tag 'body'
+  var body = $('body');
 
   //The Press Start, this begins the game and hides the logo
   var begin = $('.pressStart');
 
-  // Select the Press Start element, and give it a click event listener.
   begin.click(function(){
-    // uncomment these functions once the click event listener is ready
-    // start();
-    // begin.hide();
+    start();
+    begin.hide();
   });
 
   //This is how the racers are added to the page, but then hidden
@@ -105,6 +104,6 @@
     pressK();
     pressS();
   }
-
+});
 
 // PHEW

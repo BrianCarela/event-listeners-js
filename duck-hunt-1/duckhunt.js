@@ -16,8 +16,8 @@ jQuery(function() { //less characters than the $(document).ready(function){})
 
   // 3. Fantastic!  Now, let's move the duck using CSS "top" and "left"
   $duck.css({
-    top: '100px',
-    left: '100px'
+    top: '200px',
+    left: '500px'
   });
 
   // 4. Try making the duck move to a different location after 1 second
